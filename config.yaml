@@ -1,7 +1,7 @@
 # the two pools being displayed
 # (key is the ceph pool name, you can customize display with display_name)
 pools:
-  images:
-    display_name: 'Images'
-  volumes:
-    display_name: 'Volumes'
+  mdspool:
+    display_name: 'mdspool'
+  datapool:
+    display_name: 'datapool'

@@ -1,5 +1,6 @@
-Batman.Filters.bytesNumber = (num) ->
+Batman.Filters.bytesNumber = (nnum) ->
   return num if isNaN(num)
+  num=parseInt(nnum,10)
   if num >= 1000000000000000000
     (num / 1000000000000000000).toFixed(1) + 'E'
   else if num >= 1000000000000000
@@ -21,7 +22,7 @@ class Dashing.Mgraph extends Dashing.Widget
     return @get('displayedValue') if @get('displayedValue')
     points = @get('points')
     if points
-      points[0][points[0].length - 1].y + ' / ' + points[1][points[1].length - 1].y 
+      Batman.Filters.bytesNumber(points[0][points[0].length - 1].y) + ' / ' + Batman.Filters.bytesNumber(points[1][points[1].length - 1].y)
 
   ready: ->
     container = $(@node).parent()

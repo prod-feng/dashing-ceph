@@ -6,8 +6,8 @@ dashing_config = './config.yaml'
 config = YAML.load_file(dashing_config)
 
 SCHEDULER.every '5s' do
-
-  result = %x( ceph health )
+#add sudo
+  result = %x( sudo ceph health )
 
   if result =~ /.*HEALTH_WARN.*/m
     status = 'warn'
