@@ -20,7 +20,6 @@ SCHEDULER.every '5s' do
   storage = JSON.parse(result)
 #  send_event('storage', { value: storage['stats']['total_used'].to_i, min: 0, max: storage['stats']['total_space'].to_i } )
   send_event('storage', { value: storage['stats']['total_used_bytes'].to_i, min: 0, moreinfo: "out of ", max:storage['stats']['total_avail_bytes']} )
-#  send_event('storage', { moreinfo: "out of HAHA"}) ##, storage['stats']['total_avail_bytes']})
   # update each of the config pools widgets
   config['pools'].keys.each_with_index do |poolname, index|
     for pool in storage['pools'] do

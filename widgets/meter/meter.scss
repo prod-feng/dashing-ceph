@@ -19,7 +19,10 @@ $meter-background:  darken($background-color, 15%);
     background-color: $meter-background;
     color: #fff;
   }
-
+  p.meter {
+    background-color: $meter-background;
+    color: #fff;
+  }
   .title {
     color: $title-color;
   }
