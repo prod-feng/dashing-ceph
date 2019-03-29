@@ -22,10 +22,11 @@ It provides one single dashboard with the following components:
 Screenshots
 -----------
 
-![image](https://raw.github.com/rochaporto/dashing-ceph/master/public/cephnew.png)
-![image](https://raw.github.com/rochaporto/dashing-ceph/master/public/ceph_ok.png)
+![image](https://github.com/prod-feng/dashing-ceph/master/public/cephnew.png)
 
-![image](https://raw.github.com/rochaporto/dashing-ceph/master/public/ceph_warn.png)
+![image](https://github.com/prod-feng/dashing-ceph/master/public/ceph_ok.png)
+
+![image](https://github.com/prod-feng/dashing-ceph/master/public/ceph_warn.png)
 
 Requirements
 ------------
